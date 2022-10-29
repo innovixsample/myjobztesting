@@ -28,9 +28,9 @@ public class Step_Definition extends Base_Class {
 
 		String url = File_Reader_Manager.getInstanceFRM().getInstanceCR().getUrl();
 		
-//		getURL(url);
+    getURL(url);
 		
-		driver.get("http://192.168.0.77:4202");
+		//driver.get("http://192.168.0.77:4202");
 		
 	}
 	
@@ -153,89 +153,89 @@ public class Step_Definition extends Base_Class {
 	}
 
 	@When("user Enter The Company Name In Company Name Field")
-	public void user_Enter_The_Company_Name_In_Company_Name_Field() {
+	public void user_Enter_The_Company_Name_In_Company_Name_Field() throws Exception {
 		pom.getInstancevp().getCompanyname().clear();
-		inputValueElement(pom.getInstancevp().getCompanyname(), "fita123@facademy.com");
+		inputValueElement(pom.getInstancevp().getCompanyname(), particularData (0,1,3, employer));
 	}
 
 	@When("user Enter The Mobile Number In Mobile Number Field")
-	public void user_Enter_The_Phone_Number_In_Phone_Number_Field() {
+	public void user_Enter_The_Phone_Number_In_Phone_Number_Field() throws Exception {
 		pom.getInstancevp().getMobilenumber().clear();
-		inputValueElement(pom.getInstancevp().getMobilenumber(), "9884766906");
+		inputValueElement(pom.getInstancevp().getMobilenumber(), particularData (0,1,4, employer));
 	}
 
 	@When("user Enter The Website In Website Field")
-	public void user_Enter_The_Website_In_Website_Field() {
+	public void user_Enter_The_Website_In_Website_Field() throws Exception {
 		pom.getInstancevp().getWebsite().clear();
-		inputValueElement(pom.getInstancevp().getWebsite(), "www.fitaacademy.com");
+		inputValueElement(pom.getInstancevp().getWebsite(), particularData (0,1,5, employer));
 	}
 
 	@When("user Enter The About In About Field")
-	public void user_Enter_The_About_In_About_Field() {
+	public void user_Enter_The_About_In_About_Field() throws Exception {
 		pom.getInstancevp().getAbout().clear();
-		inputValueElement(pom.getInstancevp().getAbout(), "Nice place to learn the technology");
+		inputValueElement(pom.getInstancevp().getAbout(), particularData (0,1,6, employer));
 	}
 
 	@When("click On The Industry button")
-	public void click_On_The_Industry_button() {
+	public void click_On_The_Industry_button() throws Exception {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
 		try {
 			js.executeScript("arguments[0].scrollIntoView();", pom.getInstancevp().getIndustry());
-			inputValueElement(pom.getInstancevp().getIndustry(), "Health care");
+			inputValueElement(pom.getInstancevp().getIndustry(), particularData (0,1,7, employer));
 		} catch (Exception e) {
 			js.executeScript("arguments[0].scrollIntoView();", pom.getInstancevp().getIndustry());
-			inputValueElement(pom.getInstancevp().getIndustry(), "Health care");
+			inputValueElement(pom.getInstancevp().getIndustry(), particularData (0,1,7, employer));
 		}
 	}
 
 	@When("user Enter The Founded In Founded Field")
-	public void user_Enter_The_Founded_In_Founded_Field() {
+	public void user_Enter_The_Founded_In_Founded_Field() throws Exception {
 		pom.getInstancevp().getFounded().clear();
-		inputValueElement(pom.getInstancevp().getFounded(), "1990");
+		inputValueElement(pom.getInstancevp().getFounded(), particularData (0,1,8, employer));
 	}
 
 	@When("Click On The Company Size button")
-	public void click_On_The_Company_Size_button() {
-		inputValueElement(pom.getInstancevp().getComsize(), "100 - 150 employees");
+	public void click_On_The_Company_Size_button() throws Exception {
+		inputValueElement(pom.getInstancevp().getComsize(), particularData (0,1,9, employer));
 	}
 
 	@When("user Enter The Address In Address Field")
-	public void user_Enter_The_Address_In_Address_Field() {
+	public void user_Enter_The_Address_In_Address_Field() throws Exception {
 		pom.getInstancevp().getAddress1().clear();
-		inputValueElement(pom.getInstancevp().getAddress1(), "Bharathi dhasan colony");
+		inputValueElement(pom.getInstancevp().getAddress1(), particularData (0,1,10, employer));
 	}
 
 	@When("user Enter The Addresss In Addresss Field")
-	public void user_Enter_The_Addresss_In_Addresss_Field() {
+	public void user_Enter_The_Addresss_In_Addresss_Field() throws Exception {
 		pom.getInstancevp().getAddress2().clear();
-		inputValueElement(pom.getInstancevp().getAddress2(), "Guduvanchery chennai");
+		inputValueElement(pom.getInstancevp().getAddress2(), particularData (0,1,11, employer));
 	}
 
 	@When("click On The State button")
-	public void click_On_The_State_button() {
-		inputValueElement(pom.getInstancevp().getState(), "Tamil Nadu");
+	public void click_On_The_State_button() throws Exception {
+		inputValueElement(pom.getInstancevp().getState(), particularData (0,1,12, employer));
 	}
 
 	@When("click On The District button")
-	public void click_On_The_District_button() {
-		inputValueElement(pom.getInstancevp().getDistrict(), "Chennai");
+	public void click_On_The_District_button() throws Exception {
+		inputValueElement(pom.getInstancevp().getDistrict(), particularData (0,1,13, employer));
 	}
 
 	@When("click On The City button")
-	public void click_On_The_City_button() {
-		inputValueElement(pom.getInstancevp().getCity(), "Chennai Central");
+	public void click_On_The_City_button() throws Exception {
+		inputValueElement(pom.getInstancevp().getCity(), particularData (0,1,14, employer));
 	}
 
 	@When("click On The Document Name button")
-	public void click_On_The_Document_Name_button() {
-		inputValueElement(pom.getInstancevp().getDocumentname(), "GST Document");
+	public void click_On_The_Document_Name_button() throws Exception {
+		inputValueElement(pom.getInstancevp().getDocumentname(), particularData (0,1,15, employer));
 	}
 
 	@When("user Enter The Document Number In Document Number Field")
-	public void user_Enter_The_Document_Number_In_Document_Number_Field() {
+	public void user_Enter_The_Document_Number_In_Document_Number_Field() throws Exception {
 		pom.getInstancevp().getDocumentnumber().clear();
-		inputValueElement(pom.getInstancevp().getDocumentnumber(), "123456789012");
+		inputValueElement(pom.getInstancevp().getDocumentnumber(), particularData (0,1,16, employer));
 	}
 
 	@When("click On The Update button")

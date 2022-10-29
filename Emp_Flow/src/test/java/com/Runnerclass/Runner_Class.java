@@ -32,8 +32,8 @@ public class Runner_Class extends Base_Class {
 		   
 		   String url = File_Reader_Manager.getInstanceFRM().getInstanceCR().getUrl();
 		   
-//		   getURL(url);
-		   driver.get("http://192.168.0.77:4202");
+		   getURL(url);
+		   //driver.get("http://192.168.0.77:4202");
 		   	    	 	
 	 		//Signing
 	 		

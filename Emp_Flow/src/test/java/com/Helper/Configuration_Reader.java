@@ -11,7 +11,7 @@ public class Configuration_Reader {
 
 	public Configuration_Reader() throws Throwable {
 
-	File f = new File("/home/ist-001/eclipse-workspace/Employer_Flow/src/test/java/com.properties/Configure.properties");
+	File f = new File("/home/ist-001/git/repository/Emp_Flow/src/test/java/emp.properties");
 
 	FileInputStream fis = new FileInputStream(f);
 
